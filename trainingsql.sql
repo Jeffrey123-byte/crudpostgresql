@@ -1,20 +1,20 @@
--- CREATE TABLE employees(
--- 	id SERIAL PRIMARY KEY,name VARCHAR(100),role VARCHAR(50),salary INTEGER);
+ CREATE TABLE employees(
+ 	id SERIAL PRIMARY KEY,name VARCHAR(100),role VARCHAR(50),salary INTEGER);
 	
--- select * from employees;
+select * from employees;
 
--- insert into employees(name, role, salary)
--- values('Rey Johnson', 'Developer', '60000');
+ insert into employees(name, role, salary)
+ values('Rey Johnson', 'Developer', '60000');
 
--- insert into employees(name,role,salary)
--- values('Raj kumar', 'Developer', '40000');
+ insert into employees(name,role,salary)
+ values('Raj kumar', 'Developer', '40000');
 
--- select * from employees;
--- select * from employees where name = 'Raj kumar';
+ select * from employees;
+ select * from employees where name = 'Raj kumar';
 
--- SELECT * FROM employees
--- ORDER BY salary DESC;
--- select name,role from employees where name = 'Rey Johnson';
+SELECT * FROM employees
+ORDER BY salary DESC;
+select name,role from employees where name = 'Rey Johnson';
 
 INSERT INTO employees (name, role, salary) VALUES
 ('Raj kumar', 'Developer', '40000'),
@@ -40,5 +40,20 @@ INSERT INTO employees (name, role, salary) VALUES
 ('Arjun Kapoor', 'Scrum Master', '59000');
 
 select * from employees;
+
+select distinct role,name from employees
+
+alter table employees add column company varchar(50);
+
+update employees set company = 'Amadis'
+
+select * from employees;
+
+SELECT * FROM employees
+ORDER BY id ASC;
+
+SELECT * FROM employees
+ORDER BY id DESC;
+
 
 
